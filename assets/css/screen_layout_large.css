@@ -11,7 +11,7 @@ header a.logo {
   background-repeat: no-repeat; 
 }
 
-nav{
+nav {
   width: 100%;
   position: absolute;
   display: block;
@@ -20,14 +20,14 @@ nav{
 
 /* Layout for larger screen (for older browsers) */
 
-header{
+header {
   height: 275px; /*matching the slice size of the banner_large.jpg in photoshop file */
   background: url(../images/banner_large.jpg) no-repeat right 0px; 
   background-size: 980px 275px;
 }
 
 
-header a.logo{
+header a.logo {
   width: 150px; /*matching the slice size of the logo_large.jpg in photoshop file */
   height: 85px;
   top: 28px;  /* a.logo is globally positioned absolute and hence the top and right will change as per the individual screen size */
@@ -36,44 +36,44 @@ header a.logo{
   background-size: 150px 85px;
 }
 
-article{
+article {
   padding: 60px 20px 10px 20px;
 }
 
-.promo_container{
+.promo_container {
   padding: 0 0 15px 20px;
 }
 
-.promo_container .promo{
+.promo_container .promo {
   width: 33%;
   float: left;
   background-position: 0px 3px;
 }
 
-.promo_container .promo .content{
+.promo_container .promo .content {
   padding: 0 30px 0 70px;
 }
 
-nav{
+nav {
    top: 275px;
 }
-nav a{
+
+nav a {
   margin: 12px 0 10px 20px;
 } 
 
-@media screen and (max-width:990px){
+@media screen and (max-width:990px) {
   footer { padding-left: 20px; } 
 }
 
 @media
-	only screen and (-webkit-min-device-pixel-ratio: 2),
-	only screen and (   min--moz-device-pixel-ratio: 2),
-	only screen and (     -o-min-device-pixel-ratio: 2/1),
-	only screen and (        min-device-pixel-ratio: 2),
-	only screen and (                min-resolution: 192dpi),
-	only screen and (                min-resolution: 2dppx)
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx)
 {
 	header a.logo { background-image: url(../images/logo_large_2x.png); }
 	header { background-image: url(../images/banner_large_2x.jpg); }
-
 }
